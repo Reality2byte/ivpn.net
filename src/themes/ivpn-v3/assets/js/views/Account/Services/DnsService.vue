@@ -1,26 +1,26 @@
 <template>
     <div>
-        <h2>{{ $t('account.services.mail.betaTitle') }}</h2>
+        <h2>{{ $t('account.services.dns.betaTitle') }}</h2>
 
         <div v-if="!subIdDeletedAt && loaded">
-            <p>{{ $t('account.services.mail.betaDescription1') }}</p>
-            <p>{{ $t('account.services.mail.betaDescription2') }}</p>
-            <p>{{ $t('account.services.mail.betaDescription3') }}</p>
-            <p>{{ $t('account.services.mail.betaDescription4') }}</p>
+            <p>{{ $t('account.services.dns.betaDescription1') }}</p>
+            <p>{{ $t('account.services.dns.betaDescription2') }}</p>
+            <p>{{ $t('account.services.dns.betaDescription3') }}</p>
+            <p>{{ $t('account.services.dns.betaDescription4') }}</p>
             <p v-if="subId">
-                {{ $t('account.services.mail.follow') }}<br>
-                <a target="_blank" :href="'https://mailx.net/signup/' + subId">https://mailx.net/signup/{{ subId }}</a>
+                {{ $t('account.services.dns.follow') }}<br>
+                <a target="_blank" :href="'https://app.staging.ivpndns.net/signup/' + subId">https://app.staging.ivpndns.net/signup/{{ subId }}</a>
             </p>
-            <p>{{ $t('account.services.mail.feedback') }} <a href="mailto:mailx@ivpn.net">mailx@ivpn.net</a>.</p>
+            <p>{{ $t('account.services.dns.feedback') }} <a href="mailto:dns@ivpn.net">dns@ivpn.net</a>.</p>
         </div>
 
         <div v-if="subIdDeletedAt && loaded">
-            <p>{{ $t('account.services.mail.signed') }}</p>
-            <p>{{ $t('account.services.mail.access') }} <a target="_blank" href="https://mailx.net">{{ $t('account.services.mail.here') }}</a>.</p>
+            <p>{{ $t('account.services.dns.signed') }}</p>
+            <p>{{ $t('account.services.dns.access') }} <a target="_blank" href="https://app.staging.ivpndns.net">{{ $t('account.services.dns.here') }}</a>.</p>
             <p>
-                {{ $t('account.services.mail.submit') }}<br>
-                GitHub - <a target="_blank" href="https://github.com/ivpn/mailx">https://github.com/ivpn/mailx</a><br>
-                Email - <a href="mailto:mailx@ivpn.net">mailx@ivpn.net</a>
+                {{ $t('account.services.dns.submit') }}<br>
+                GitHub - <a target="_blank" href="https://github.com/ivpn/dns">https://github.com/ivpn/dns</a><br>
+                Email - <a href="mailto:dns@ivpn.net">dns@ivpn.net</a>
             </p>
         </div>
 
@@ -54,15 +54,15 @@ export default {
         }),
     },
     async beforeMount() {
-        if (!this.account.product.capabilities.has_mail) {
+        if (!this.account.product.capabilities.has_dns) {
             window.location.href = "/" + this.language + "/account/";
             return;
         }
 
         await this.$store.dispatch("auth/reload");
 
-        this.subId = this.account["email_service_id"];
-        this.subIdDeletedAt = this.account["mail_service_deleted_at"];
+        this.subId = this.account["dns_service_id"];
+        this.subIdDeletedAt = this.account["dns_service_deleted_at"];
         this.loaded = true;
 
         if (!this.subIdDeletedAt) {
@@ -75,7 +75,7 @@ export default {
     },
     methods: {
         async add() {
-            let res = await this.$store.dispatch("account/addEmailSubscription");
+            let res = await this.$store.dispatch("account/addDnsSubscription");
             if (res && !this.subId) {
                 this.subId = res.id;
             }

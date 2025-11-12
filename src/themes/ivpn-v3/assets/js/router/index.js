@@ -13,6 +13,7 @@ import AddFundsMonero from '@/views/Account/AddFunds/Monero.vue'
 import AddFundsCash from '@/views/Account/AddFunds/Cash.vue'
 import AddFundsGiftCard from '@/views/Account/AddFunds/GiftCard.vue'
 import EmailService from '../views/Account/Services/EmailService.vue'
+import DnsService from '../views/Account/Services/DnsService.vue'
 
 import WireguardView from '@/views/Account/Wireguard.vue'
 import WireguardConfigView from '@/views/Account/WireguardConfig.vue'
@@ -289,6 +290,30 @@ const routes = [
         path: '/es/account/service/email',
         name: 'service-email-es',
         component: EmailService,
+        meta: {
+            title: es.account.metaTitle.emailService,
+        }
+    },
+    {
+        path: '/account/service/dns',
+        name: 'service-dns',
+        component: DnsService,
+        meta: {
+            title: en.account.metaTitle.emailService,
+        }
+    },
+    {
+        path: '/en/account/service/dns',
+        name: 'service-dns-en',
+        component: DnsService,
+        meta: {
+            title: en.account.metaTitle.emailService,
+        }
+    },
+    {
+        path: '/es/account/service/dns',
+        name: 'service-dns-es',
+        component: DnsService,
         meta: {
             title: es.account.metaTitle.emailService,
         }

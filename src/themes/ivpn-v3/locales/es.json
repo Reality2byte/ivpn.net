@@ -115,6 +115,34 @@
             "deviceManagement": "Cuenta IVPN - Gestión de dispositivos",
             "vouchers": "Cuenta IVPN - Cupones"
         },
+        "services": {
+            "mail": {
+                "betaTitle": "Mailx Beta",
+                "betaDescription1": "Mailx es un servicio de alias de correo electrónico desarrollado por IVPN que protege tu dirección de correo electrónico real.",
+                "betaDescription2": "Con Mailx, puedes generar un correo electrónico único para cada sitio web o aplicación que uses. Todos los mensajes se reenvían directamente a tu bandeja de entrada principal, mientras que tu dirección de correo electrónico personal y el proveedor permanecen privados.",
+                "betaDescription3": "Mailx está actualmente en beta y disponible para el registro de clientes seleccionados de IVPN de forma gratuita. Mailx seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
+                "betaDescription4": "Después del registro exitoso, los identificadores específicos de Mailx se eliminan de los sistemas de IVPN, por lo que tus cuentas no están vinculadas entre sí.",
+                "follow": "Por favor, sigue el enlace de registro único a continuación para comenzar a probar Mailx:",
+                "feedback": "Agradecemos tus comentarios sobre el servicio a través de",
+                "signed": "Te has registrado en Mailx, un servicio de alias de correo electrónico desarrollado por IVPN.",
+                "access": "Accede al panel de control del servicio Mailx",
+                "here": "aquí",
+                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
+            },
+            "dns":{
+                "betaTitle": "ModDNS Beta",
+                "betaDescription1": "ModDNS es un servicio de DNS privado y seguro diseñado para evitar que sitios web, aplicaciones y terceros rastreen a dónde vas en línea.",
+                "betaDescription2": "Con ModDNS, tus consultas DNS se cifran y resuelven a través de servidores centrados en la privacidad, por lo que tu actividad de navegación permanece oculta para los ISP, corredores de datos y observadores de la red. Mantienes acceso completo a los sitios web y servicios que usas sin exponer tu historial real de solicitudes DNS.",
+                "betaDescription3": "ModDNS está actualmente en beta y disponible de forma gratuita para suscriptores seleccionados. Los participantes de la beta continuarán teniendo acceso gratuito después del lanzamiento mientras su suscripción principal permanezca activa.",
+                "betaDescription4": "Después de la activación exitosa, cualquier identificador específico de ModDNS utilizado durante la configuración se elimina permanentemente de nuestros sistemas, asegurando que ningún perfil o registro de actividad pueda vincularse a tu cuenta.",
+                "follow": "Por favor, sigue el enlace de registro único a continuación para comenzar a probar ModDNS:",
+                "feedback": "Agradecemos tus comentarios sobre el servicio a través de",
+                "signed": "Te has registrado en ModDNS, un servicio de DNS privado y seguro desarrollado por IVPN.",
+                "access": "Accede al panel de control del servicio ModDNS",
+                "here": "aquí",
+                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
+            }
+        },
         "greetings": "¡Tu cuenta ha sido creada!",
         "greetingsText": "Por favor, asegúrate de guardar tu ID de cuenta en un lugar seguro, la usarás para conectarte a la VPN. No necesitas tu correo electrónico para usar nuestro servicio.",
         "accountId":"ID de cuenta",

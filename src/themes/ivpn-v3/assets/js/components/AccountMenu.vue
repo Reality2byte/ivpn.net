@@ -17,9 +17,14 @@
                         >{{ $t('account.deviceManagement') }}</router-link
                     >
                 </li>
-                <li v-if="account.product.capabilities.has_mailx" :class="{ 'is-active': isServiceEmailRoute() }">
+                <li v-if="account.product.capabilities.has_mail" :class="{ 'is-active': isServiceEmailRoute() }">
                     <router-link :to="{ name: 'service-email-' + this.language }"
-                        >Mailx Beta</router-link
+                        >{{ $t('account.services.mail.betaTitle') }}</router-link
+                    >
+                </li>
+                <li v-if="account.product.capabilities.has_dns" :class="{ 'is-active': isServiceDnsRoute() }">
+                    <router-link :to="{ name: 'service-dns-' + this.language }"
+                        >{{ $t('account.services.dns.betaTitle') }}</router-link
                     >
                 </li>
                 <li class="expand"></li>
@@ -59,7 +64,7 @@ export default {
             return this.$route.path;
         },
         shouldDisplay() {
-            return ["account","account-en","account-es", "wireguard-en","wireguard-es", "wireguard-config","wireguard-config-es","wireguard-config-en","device-management-en","device-management-es","vouchers-es","vouchers-en", "service-email", "service-email-en", "service-email-es"].includes(
+            return ["account","account-en","account-es", "wireguard-en","wireguard-es", "wireguard-config","wireguard-config-es","wireguard-config-en","device-management-en","device-management-es","vouchers-es","vouchers-en", "service-email", "service-email-en", "service-email-es","service-dns","service-dns-en","service-dns-es"].includes(
                 this.$route.name
             );
         },
@@ -68,7 +73,7 @@ export default {
         isAccountRoute() {
             return (
                 ( this.currentRouteName.startsWith("/en/account") || this.currentRouteName.startsWith("/es/account")) &&
-                !this.isWireGuardRoute() && !this.isDeviceManagementRoute() && !this.isVouchersRoute() && !this.isServiceEmailRoute()
+                !this.isWireGuardRoute() && !this.isDeviceManagementRoute() && !this.isVouchersRoute() && !this.isServiceEmailRoute() && !this.isServiceDnsRoute()
             );
         },
         isWireGuardRoute() {
@@ -82,6 +87,9 @@ export default {
         },
         isServiceEmailRoute() {
             return this.currentRouteName.startsWith("/en/account/service/email") || this.currentRouteName.startsWith("/es/account/service/email");
+        },
+        isServiceDnsRoute() {
+            return this.currentRouteName.startsWith("/en/account/service/dns") || this.currentRouteName.startsWith("/es/account/service/dns");
         },
     },
 };

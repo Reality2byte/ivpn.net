@@ -302,6 +302,10 @@ export default {
         return await this.Post( '/web/accounts/add-email-subscription', {})
     },
 
+    async addDnsSubscription() {
+        return await this.Post( '/web/accounts/add-dns-subscription', {})
+    },
+
     //
     // Google Authenticator TOTP
     //
