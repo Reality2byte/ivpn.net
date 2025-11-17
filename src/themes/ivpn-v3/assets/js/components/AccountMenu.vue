@@ -1,6 +1,6 @@
 <template>
     <div class="tabs sub-navigation" v-if="shouldDisplay">
-        <div class="page-centered">
+        <div class="page-centered-menu">
             <ul>
                 <li :class="{ 'is-active': isAccountRoute() }">
                     <router-link :to="{ name: 'account-' + this.language }"
@@ -96,5 +96,29 @@ export default {
 </script>
 
 <style lang="scss">
+
+@import "@/styles/base.scss";
+
+.page-centered-menu {
+    max-width: 894px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+
+    @media (min-width: $brk-mobile) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.tabs .page-centered-menu ul li:not(:last-child) {
+    margin-right: 30px; 
+}
+
+@media (max-width: 576px) {
+    .tabs .page-centered-menu ul li:not(:last-child) {
+        margin-right: 0px;
+    }
+}
 
 </style>
