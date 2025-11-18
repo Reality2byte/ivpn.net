@@ -117,7 +117,7 @@
         },
         "services": {
             "mail": {
-                "betaTitle": "Mailx Beta",
+                "betaTitle": "Mailx",
                 "betaDescription1": "Mailx is an email aliasing service developed by IVPN that protects your real email address.",
                 "betaDescription2": "With Mailx, you can generate a unique email for every website or app you use. All messages are forwarded directly to your main inbox, while your personal email address and provider stay private.",
                 "betaDescription3": "Mailx is currently in beta and available for registration to selected IVPN customers for free. Mailx will stay free for beta participants after launch as long as they have an active IVPN subscription.",
@@ -130,7 +130,7 @@
                 "submit": "Please submit your feedback, requests and any issues you encounter through one of the following channels:"
             },
             "dns":{
-                "betaTitle": "ModDNS Beta",
+                "betaTitle": "ModDNS",
                 "betaDescription1": "ModDNS is a private, secure DNS service designed to prevent websites, apps, and third parties from tracking where you go online.",
                 "betaDescription2": "With ModDNS, your DNS queries are encrypted and resolved through privacy centric servers, so your browsing activity stays hidden from ISPs, data brokers, and network observers. You maintain full access to the websites and services you use without exposing your real DNS request history.",
                 "betaDescription3": "ModDNS is currently in beta and available for free to selected subscribers. Beta participants will continue to have free access after launch for as long as their main subscription remains active.",
@@ -170,10 +170,10 @@
         "cash": "Cash",
         "haveVoucher": "Have a voucher code?",
         "redeem": "Redeem it here",
-        "ivpnAccount": "IVPN Account",
+        "ivpnAccount": "Services",
         "wireguard": "Wireguard",
         "deviceManagement": "Devices",
-        "accountSettings": "Account Settings",
+        "accountSettings": "Settings",
         "changeProductTitle": "Change Product",
         "changeProductDesc": "You can change your product plan any time. If your account is active, changing the product type will change the amount of time left on your account.",
         "activeUntil": "Active until:",

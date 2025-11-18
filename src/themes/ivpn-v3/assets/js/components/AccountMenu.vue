@@ -1,6 +1,6 @@
 <template>
     <div class="tabs sub-navigation" v-if="shouldDisplay">
-        <div class="page-centered-menu">
+        <div class="page-centered">
             <ul>
                 <li :class="{ 'is-active': isAccountRoute() }">
                     <router-link :to="{ name: 'account-' + this.language }"

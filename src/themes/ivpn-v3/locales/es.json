@@ -117,7 +117,7 @@
         },
         "services": {
             "mail": {
-                "betaTitle": "Mailx Beta",
+                "betaTitle": "Mailx",
                 "betaDescription1": "Mailx es un servicio de alias de correo electrónico desarrollado por IVPN que protege tu dirección de correo electrónico real.",
                 "betaDescription2": "Con Mailx, puedes generar un correo electrónico único para cada sitio web o aplicación que uses. Todos los mensajes se reenvían directamente a tu bandeja de entrada principal, mientras que tu dirección de correo electrónico personal y el proveedor permanecen privados.",
                 "betaDescription3": "Mailx está actualmente en beta y disponible para el registro de clientes seleccionados de IVPN de forma gratuita. Mailx seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
@@ -130,7 +130,7 @@
                 "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
             },
             "dns":{
-                "betaTitle": "ModDNS Beta",
+                "betaTitle": "ModDNS",
                 "betaDescription1": "ModDNS es un servicio de DNS privado y seguro diseñado para evitar que sitios web, aplicaciones y terceros rastreen a dónde vas en línea.",
                 "betaDescription2": "Con ModDNS, tus consultas DNS se cifran y resuelven a través de servidores centrados en la privacidad, por lo que tu actividad de navegación permanece oculta para los ISP, corredores de datos y observadores de la red. Mantienes acceso completo a los sitios web y servicios que usas sin exponer tu historial real de solicitudes DNS.",
                 "betaDescription3": "ModDNS está actualmente en beta y disponible de forma gratuita para suscriptores seleccionados. Los participantes de la beta continuarán teniendo acceso gratuito después del lanzamiento mientras su suscripción principal permanezca activa.",
@@ -170,7 +170,7 @@
         "cash": "Efectivo",
         "haveVoucher": "¿Tienes un cupón?",
         "redeem": "Canjéalo aquí",
-        "ivpnAccount": "Cuenta IVPN",
+        "ivpnAccount": "Servicios",
         "wireguard": "Wireguard",
         "deviceManagement": "Dispositivos",
         "accountSettings": "Configuración",
