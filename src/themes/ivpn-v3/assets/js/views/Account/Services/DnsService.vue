@@ -11,7 +11,7 @@
                 {{ $t('account.services.dns.follow') }}<br>
                 <a target="_blank" :href="'https://app.staging.ivpndns.net/signup/' + subId">https://app.staging.ivpndns.net/signup/{{ subId }}</a>
             </p>
-            <p>{{ $t('account.services.dns.feedback') }} <a href="mailto:dns@ivpn.net">dns@ivpn.net</a>.</p>
+            <p>{{ $t('account.services.dns.feedback') }} <a href="mailto:moddns@ivpn.net">moddns@ivpn.net</a>.</p>
         </div>
 
         <div v-if="subIdDeletedAt && loaded">
@@ -20,7 +20,7 @@
             <p>
                 {{ $t('account.services.dns.submit') }}<br>
                 GitHub - <a target="_blank" href="https://github.com/ivpn/dns">https://github.com/ivpn/dns</a><br>
-                Email - <a href="mailto:dns@ivpn.net">dns@ivpn.net</a>
+                Email - <a href="mailto:moddns@ivpn.net">moddns@ivpn.net</a>
             </p>
         </div>
 
