@@ -13,35 +13,35 @@ The current message is here:
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-As of 2025-11-04 no warrants have ever been served to IVPN or IVPN employees. No searches or seizures of any kind have ever been performed on IVPN assets. IVPN has no direct or indirect knowledge of any backdoors, or potential backdoors in our servers or network and IVPN has not received any requests to implement a backdoor. IVPN has never disclosed any user communications to any third party.
+As of 2026-01-07 no warrants have ever been served to IVPN or IVPN employees. No searches or seizures of any kind have ever been performed on IVPN assets. IVPN has no direct or indirect knowledge of any backdoors, or potential backdoors in our servers or network and IVPN has not received any requests to implement a backdoor. IVPN has never disclosed any user communications to any third party.
 
 Source: mempool.space (https://mempool.space/blocks)
 
-height: 922162
-hash: 00000000000000000000863a3e588ce6b881b1c5ef13296f6cec03c82b34089d
+height: 931271
+hash: 0000000000000000000123c2343b6b48963863a34de96e52d316ff5e686c7a1d
 
 
 Source: FT (https://www.ft.com/news-feed)
 
-New EU members could be put ‘on probation’, says official
-Enlargement commissioner Marta Kos says bloc has to prevent Russian ‘Trojan horse’ behaviour from new entrants
+KKR to invest $1.5bn into European data centre business
+US private capital group’s investment into Global Technical Realty comes alongside $400mn from Oak Hill Capital
 
-ABF explores spinning off Primark fashion chain
-London-listed group examines splitting retail and food businesses
+How Trump became just another Republican president
+His enthusiasm for big business and foreign intervention is more Reaganite than populist
 
-Reeves prepares ground for tax rises in Downing Street speech
-Chancellor pledges to take ‘fair choices’ to reduce debt, protect NHS and cut cost of living in Budget
+Reader callout: Have you tried to put crypto in your Isa?
+Tell us your views on the UK government’s decision to allow investors to hold digital ETNs in their savings accounts
 
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXxDK46RlUWr/x/EkisFrnrZHumkFAmkJxJkACgkQisFrnrZH
-umkeTwf9ELM3qK7qYPB0cCbNEAAr7mljlzUx2YtotR9nyaIClVchMfW0EbD8VG0A
-SOS+7vLfBlUtWe1HuCJmzRUIqdQ6NbrnbxrM7RZo1x/K2+FbiyaSYHVzOjQQyhET
-EtP1tp5uFoUHlxAuFEPNn04y/RUQ1ZWJGMYqbrunWBdRqlM4c01lgJCE0eE/vIMR
-f++ho9TeVnZj73/ymgovxGbaLeWi874IsGwiQ4LAbP2czBi7ilIBk/1tVkXUcY0z
-Oq3ZE3VxkeoBhC9Dq+W+QFnp6n7YrPcxgdrh5Qe4kGOcPTYi3t3EwlFLzLx2m8Z4
-U59/p87GCUmz2k4yAY7mlxrAB0VxfA==
-=02z7
+iQEzBAEBCgAdFiEEXxDK46RlUWr/x/EkisFrnrZHumkFAmleSxIACgkQisFrnrZH
+umkrAAf/dddkU7y72sE4/ThDH3yZupWvoZTDNiKgcli1dvPI83JWFqgJFHpG7ZMD
+xJ3yOYKNoMO2CM25fTal7mGjfMfO8CpP6LV8dBYt/gxTLpAnG5iuFYOoZ9Bn5r8m
+otWZyVXZFk0k4HHNqtUvt1jLDO8OTXzEUrhariap8MEEPchB7HxyJWzibHDNkx+D
+4Y0T6EClF2WZG0OZfK7T/fO3Y+x47/v/yNYeKAGNV5Yb5pL0PgX59FyBFvqwEWHy
+pxZU6PnpLAlqePkYgK7GsbPPKhSlXW8kmKsJf83KL2CSoSokypKNSBm+7SLhb9GK
+yEMN07G11oikv8Th0/D7x+JXtW0fuA==
+=rm0L
 -----END PGP SIGNATURE-----
 
 

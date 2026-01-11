@@ -7,16 +7,18 @@
             <p>{{ $t('account.services.mail.betaDescription2') }}</p>
             <p>{{ $t('account.services.mail.betaDescription3') }}</p>
             <p>{{ $t('account.services.mail.betaDescription4') }}</p>
+            <p>{{ $t('account.services.mail.betaDescription5') }}</p>
             <p v-if="subId">
                 {{ $t('account.services.mail.follow') }}<br>
-                <a target="_blank" :href="'https://mailx.net/signup/' + subId">https://mailx.net/signup/{{ subId }}</a>
+                <a target="_blank" :href="'https://app.mailx.net/signup/' + subId">https://app.mailx.net/signup/{{ subId }}</a>
             </p>
             <p>{{ $t('account.services.mail.feedback') }} <a href="mailto:mailx@ivpn.net">mailx@ivpn.net</a>.</p>
         </div>
 
         <div v-if="subIdDeletedAt && loaded">
             <p>{{ $t('account.services.mail.signed') }}</p>
-            <p>{{ $t('account.services.mail.access') }} <a target="_blank" href="https://mailx.net">{{ $t('account.services.mail.here') }}</a>.</p>
+            <p>{{ $t('account.services.mail.access') }} <a target="_blank" href="https://app.mailx.net">{{ $t('account.services.mail.here') }}</a>.</p>
+            <p>{{ $t('account.services.mail.betaDescription5') }}</p>
             <p>
                 {{ $t('account.services.mail.submit') }}<br>
                 GitHub - <a target="_blank" href="https://github.com/ivpn/mailx">https://github.com/ivpn/mailx</a><br>
