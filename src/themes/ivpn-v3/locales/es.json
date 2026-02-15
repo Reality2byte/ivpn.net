@@ -132,7 +132,7 @@
             },
             "dns":{
                 "betaTitle": "ModDNS",
-                "betaDescription1": "ModDBS es un servicio DNS independiente que ayuda a mejorar tu privacidad bloqueando anuncios, rastreadores y dominios maliciosos. Ofrece una amplia variedad de listas de bloqueo, combinaciones predefinidas y reglas personalizadas para filtrar las consultas DNS.",
+                "betaDescription1": "ModDNS es un servicio DNS independiente que ayuda a mejorar tu privacidad bloqueando anuncios, rastreadores y dominios maliciosos. Ofrece una amplia variedad de listas de bloqueo, combinaciones predefinidas y reglas personalizadas para filtrar las consultas DNS.",
                 "betaDescription2": "Usa modDNS combinado con IVPN, configúralo en todo el sistema en cualquier sistema operativo o directamente dentro de los navegadores.",
                 "betaDescription3": "ModDNS está actualmente en beta y disponible para el registro en clientes seleccionados de IVPN de forma gratuita. El servicio seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
                 "betaDescription4": "Después del registro, los identificadores específicos de ModDNS se eliminan de los sistemas de IVPN, por lo que tus cuentas no están vinculadas entre sí.",
