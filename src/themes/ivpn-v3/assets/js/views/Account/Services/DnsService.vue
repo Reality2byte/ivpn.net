@@ -10,14 +10,14 @@
             <p>{{ $t('account.services.dns.betaDescription5') }}</p>
             <p v-if="subId">
                 {{ $t('account.services.dns.follow') }}<br>
-                <a target="_blank" :href="'https://app.staging.ivpndns.net/signup/' + subId">https://app.staging.ivpndns.net/signup/{{ subId }}</a>
+                <a target="_blank" :href="'https://app.moddns.net/signup/' + subId">https://app.moddns.net/signup/{{ subId }}</a>
             </p>
             <p>{{ $t('account.services.dns.feedback') }} <a href="mailto:moddns@ivpn.net">moddns@ivpn.net</a>.</p>
         </div>
 
         <div v-if="subIdDeletedAt && loaded">
             <p>{{ $t('account.services.dns.signed') }}</p>
-            <p>{{ $t('account.services.dns.access') }} <a target="_blank" href="https://app.staging.ivpndns.net">{{ $t('account.services.dns.here') }}</a>.</p>
+            <p>{{ $t('account.services.dns.access') }} <a target="_blank" href="https://app.moddns.net">{{ $t('account.services.dns.here') }}</a>.</p>
             <p>{{ $t('account.services.dns.betaDescription5') }}</p>
             <p>
                 {{ $t('account.services.dns.submit') }}<br>
