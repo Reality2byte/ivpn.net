@@ -299,7 +299,7 @@ const routes = [
         name: 'service-dns',
         component: DnsService,
         meta: {
-            title: en.account.metaTitle.emailService,
+            title: en.account.metaTitle.dnsService,
         }
     },
     {
@@ -307,7 +307,7 @@ const routes = [
         name: 'service-dns-en',
         component: DnsService,
         meta: {
-            title: en.account.metaTitle.emailService,
+            title: en.account.metaTitle.dnsService,
         }
     },
     {
@@ -315,7 +315,7 @@ const routes = [
         name: 'service-dns-es',
         component: DnsService,
         meta: {
-            title: es.account.metaTitle.emailService,
+            title: es.account.metaTitle.dnsService,
         }
     },
     {

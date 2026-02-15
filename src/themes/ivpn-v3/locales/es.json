@@ -113,7 +113,8 @@
             "wireguard": "Cuenta IVPN - WireGuard",
             "wireguardConfig": "Cuenta IVPN - Configuración de WireGuard",
             "deviceManagement": "Cuenta IVPN - Gestión de dispositivos",
-            "vouchers": "Cuenta IVPN - Cupones"
+            "vouchers": "Cuenta IVPN - Cupones",
+            "dnsService": "Cuenta IVPN - ModDNS"
         },
         "services": {
             "mail": {

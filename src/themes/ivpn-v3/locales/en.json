@@ -113,7 +113,8 @@
             "wireguard": "IVPN Account - WireGuard",
             "wireguardConfig": "IVPN Account - WireGuard Configuration",
             "deviceManagement": "IVPN Account - Device management",
-            "vouchers": "IVPN Account - Vouchers"
+            "vouchers": "IVPN Account - Vouchers",
+            "dnsService": "IVPN Account - ModDNS"
         },
         "services": {
             "mail": {
