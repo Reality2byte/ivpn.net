@@ -60,7 +60,11 @@ From the [audit report][2]:
 
 ## What is coming
 
-Several features are planned for development as modDNS moves toward full release. The exact implementation order will depend on beta feedback and technical considerations, but we're exploring:
+Several improvements are planned as modDNS moves toward full release. The exact order will depend on beta feedback and technical considerations, but here's what we're working on:
+
+- Expanding server coverage to improve DNS resolution speed specifically in Latin America, Southeast Asia and Oceania
+
+- Ongoing network routing and performance optimizations
 
 - Blocking specific services (Facebook, Amazon, Google, etc.)
 
