@@ -64,7 +64,7 @@ export default {
         await this.$store.dispatch("auth/reload");
 
         this.subId = this.account["email_service_id"];
-        this.subIdDeletedAt = this.account["mail_service_deleted_at"];
+        this.subIdDeletedAt = this.account["email_service_deleted_at"];
         this.loaded = true;
 
         if (!this.subIdDeletedAt) {
