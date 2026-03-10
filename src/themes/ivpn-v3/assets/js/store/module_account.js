@@ -285,10 +285,20 @@ export default {
         },
 
         async addEmailSubscription(context) {
-            console.log('addEmailSubscription', context)
             context.commit('started')
             try {
                 let res = await Api.addEmailSubscription()
+                context.commit('done')
+                return res
+            } catch (error) {
+                context.commit('failed', { error })
+            }
+        },
+
+        async addDnsSubscription(context) {
+            context.commit('started')
+            try {
+                let res = await Api.addDnsSubscription()
                 context.commit('done')
                 return res
             } catch (error) {

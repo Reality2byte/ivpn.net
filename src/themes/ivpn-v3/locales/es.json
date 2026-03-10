@@ -113,7 +113,38 @@
             "wireguard": "Cuenta IVPN - WireGuard",
             "wireguardConfig": "Cuenta IVPN - Configuración de WireGuard",
             "deviceManagement": "Cuenta IVPN - Gestión de dispositivos",
-            "vouchers": "Cuenta IVPN - Cupones"
+            "vouchers": "Cuenta IVPN - Cupones",
+            "dnsService": "Cuenta IVPN - ModDNS"
+        },
+        "services": {
+            "mail": {
+                "betaTitle": "Mailx",
+                "betaDescription1": "Mailx es un servicio de alias de correo electrónico desarrollado por IVPN que protege tu dirección de correo electrónico real.",
+                "betaDescription2": "Con Mailx, puedes generar un correo electrónico único para cada sitio web o aplicación que uses. Todos los mensajes se reenvían directamente a tu bandeja de entrada principal, mientras que tu dirección de correo electrónico personal y el proveedor permanecen privados.",
+                "betaDescription3": "Mailx está actualmente en beta y disponible para el registro de clientes seleccionados de IVPN de forma gratuita. Mailx seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
+                "betaDescription4": "Después del registro exitoso, los identificadores específicos de Mailx se eliminan de los sistemas de IVPN, por lo que tus cuentas no están vinculadas entre sí.",
+                "betaDescription5": "Descargo de responsabilidad de la beta: Este servicio está en desarrollo activo. Puedes experimentar interrupciones ocasionales o retrasos en la entrega. No confíes en Mailx para entregas críticas hasta el lanzamiento completo.",
+                "follow": "Por favor, sigue el enlace de registro único a continuación para comenzar a probar Mailx:",
+                "feedback": "Agradecemos tus comentarios sobre el servicio a través de",
+                "signed": "Te has registrado en Mailx, un servicio de alias de correo electrónico desarrollado por IVPN.",
+                "access": "Accede al panel de control del servicio Mailx",
+                "here": "aquí",
+                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
+            },
+            "dns":{
+                "betaTitle": "ModDNS",
+                "betaDescription1": "ModDNS es un servicio DNS independiente que ayuda a mejorar tu privacidad bloqueando anuncios, rastreadores y dominios maliciosos. Ofrece una amplia variedad de listas de bloqueo, combinaciones predefinidas y reglas personalizadas para filtrar las consultas DNS.",
+                "betaDescription2": "Usa modDNS combinado con IVPN, configúralo en todo el sistema en cualquier sistema operativo o directamente dentro de los navegadores.",
+                "betaDescription3": "ModDNS está actualmente en beta y disponible para el registro en clientes seleccionados de IVPN de forma gratuita. El servicio seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
+                "betaDescription4": "Después del registro, los identificadores específicos de ModDNS se eliminan de los sistemas de IVPN, por lo que tus cuentas no están vinculadas entre sí.",
+                "betaDescription5": "Descargo de responsabilidad de la beta: Este servicio está en desarrollo activo. Puedes experimentar interrupciones ocasionales o retrasos en la entrega. No confíes en ModDNS para servicios críticos hasta el lanzamiento completo.",
+                "follow": "Para comenzar a probar modDNS, sigue el enlace de registro único a continuación:",
+                "feedback": "Agradecemos tus comentarios sobre el servicio a través de",
+                "signed": "Te has registrado en ModDNS, un servicio de DNS privado y seguro desarrollado por IVPN.",
+                "access": "Accede al panel de control del servicio ModDNS",
+                "here": "aquí",
+                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
+            }
         },
         "greetings": "¡Tu cuenta ha sido creada!",
         "greetingsText": "Por favor, asegúrate de guardar tu ID de cuenta en un lugar seguro, la usarás para conectarte a la VPN. No necesitas tu correo electrónico para usar nuestro servicio.",
@@ -142,7 +173,7 @@
         "cash": "Efectivo",
         "haveVoucher": "¿Tienes un cupón?",
         "redeem": "Canjéalo aquí",
-        "ivpnAccount": "Cuenta IVPN",
+        "ivpnAccount": "Servicios",
         "wireguard": "Wireguard",
         "deviceManagement": "Dispositivos",
         "accountSettings": "Configuración",
