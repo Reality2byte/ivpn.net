@@ -8,9 +8,20 @@
             <p>{{ $t('account.services.dns.betaDescription3') }}</p>
             <p>{{ $t('account.services.dns.betaDescription4') }}</p>
             <p>{{ $t('account.services.dns.betaDescription5') }}</p>
-            <p v-if="subId">
+            <p v-if="!subId">
+                <p>
+                {{ $t('account.services.dns.follow') }}
+                </p>
+                <a class="btn btn-solid btn-big" @click="add">{{ $t('account.services.dns.generate') }}</a>
+            </p>
+            <p v-else>
+                <p>
                 {{ $t('account.services.dns.follow') }}<br>
-                <a target="_blank" :href="'https://app.moddns.net/signup/' + subId">https://app.moddns.net/signup/{{ subId }}</a>
+                </p>
+                <p>
+                    {{ $t('account.services.dns.signup') }} <a target="_blank" :href="'https://app.moddns.net/signup/' + subId">https://app.moddns.net/signup/{{ subId }}</a><br>
+                    {{ $t('account.services.dns.expireNote') }}
+                </p>
             </p>
             <p>{{ $t('account.services.dns.feedback') }} <a href="mailto:moddns@ivpn.net">moddns@ivpn.net</a>.</p>
         </div>
@@ -66,10 +77,6 @@ export default {
         this.subId = this.account["dns_service_id"];
         this.subIdDeletedAt = this.account["dns_service_deleted_at"];
         this.loaded = true;
-
-        if (!this.subIdDeletedAt) {
-            this.add();
-        }
     },
     mounted() {
         useI18n().locale.value = window.location.href.split("/")[3];

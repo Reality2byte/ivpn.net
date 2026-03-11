@@ -8,9 +8,20 @@
             <p>{{ $t('account.services.mail.betaDescription3') }}</p>
             <p>{{ $t('account.services.mail.betaDescription4') }}</p>
             <p>{{ $t('account.services.mail.betaDescription5') }}</p>
-            <p v-if="subId">
+            <p v-if="!subId">
+                <p>
+                {{ $t('account.services.mail.follow') }}
+                </p>
+                <a class="btn btn-solid btn-big" @click="add">{{ $t('account.services.mail.generate') }}</a>
+            </p>
+            <p v-else>
+                <p>
                 {{ $t('account.services.mail.follow') }}<br>
-                <a target="_blank" :href="'https://app.mailx.net/signup/' + subId">https://app.mailx.net/signup/{{ subId }}</a>
+                </p>
+                <p>
+                    {{ $t('account.services.mail.signup') }} <a target="_blank" :href="'https://app.mailx.net/signup/' + subId">https://app.mailx.net/signup/{{ subId }}</a><br>
+                    {{ $t('account.services.mail.expireNote') }}
+                </p>
             </p>
             <p>{{ $t('account.services.mail.feedback') }} <a href="mailto:mailx@ivpn.net">mailx@ivpn.net</a>.</p>
         </div>
@@ -66,10 +77,6 @@ export default {
         this.subId = this.account["email_service_id"];
         this.subIdDeletedAt = this.account["email_service_deleted_at"];
         this.loaded = true;
-
-        if (!this.subIdDeletedAt) {
-            this.add();
-        }
     },
     mounted() {
         useI18n().locale.value = window.location.href.split("/")[3];
