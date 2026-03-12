@@ -8,7 +8,7 @@
             <p>{{ $t('account.services.mail.betaDescription3') }}</p>
             <p>{{ $t('account.services.mail.betaDescription4') }}</p>
             <p>{{ $t('account.services.mail.betaDescription5') }}</p>
-            <p v-if="!subId">
+            <p v-if="!generated">
                 <p>
                 {{ $t('account.services.mail.follow') }}
                 </p>
@@ -57,6 +57,7 @@ export default {
             subIdDeletedAt: "",
             store: false,
             success: "",
+            generated: false,
         };
     },
     computed: {
@@ -85,8 +86,9 @@ export default {
     methods: {
         async add() {
             let res = await this.$store.dispatch("account/addEmailSubscription");
-            if (res && !this.subId) {
+            if (res) {
                 this.subId = res.id;
+                this.generated = true;
             }
         },
     },
