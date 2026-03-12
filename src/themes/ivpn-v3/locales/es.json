@@ -124,12 +124,15 @@
                 "betaDescription3": "Mailx está actualmente en beta y disponible para el registro de clientes seleccionados de IVPN de forma gratuita. Mailx seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
                 "betaDescription4": "Después del registro exitoso, los identificadores específicos de Mailx se eliminan de los sistemas de IVPN, por lo que tus cuentas no están vinculadas entre sí.",
                 "betaDescription5": "Descargo de responsabilidad de la beta: Este servicio está en desarrollo activo. Puedes experimentar interrupciones ocasionales o retrasos en la entrega. No confíes en Mailx para entregas críticas hasta el lanzamiento completo.",
-                "follow": "Por favor, sigue el enlace de registro único a continuación para comenzar a probar Mailx:",
+                "follow": "Solicita un enlace de registro único a continuación para comenzar a probar Mailx:",
                 "feedback": "Agradecemos tus comentarios sobre el servicio a través de",
                 "signed": "Te has registrado en Mailx, un servicio de alias de correo electrónico desarrollado por IVPN.",
                 "access": "Accede al panel de control del servicio Mailx",
                 "here": "aquí",
-                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
+                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:",
+                "generate": "Generar",
+                "signup": "Regístrate en la beta de Mailx a través de este enlace:",
+                "expireNote": "Nota: Esta URL expira 15 minutos después de su generación."
             },
             "dns":{
                 "betaTitle": "ModDNS",
@@ -138,12 +141,15 @@
                 "betaDescription3": "ModDNS está actualmente en beta y disponible para el registro en clientes seleccionados de IVPN de forma gratuita. El servicio seguirá siendo gratuito para los participantes de la beta después del lanzamiento mientras tengan una suscripción activa a IVPN.",
                 "betaDescription4": "Después del registro, los identificadores específicos de ModDNS se eliminan de los sistemas de IVPN, por lo que tus cuentas no están vinculadas entre sí.",
                 "betaDescription5": "Descargo de responsabilidad de la beta: Este servicio está en desarrollo activo. Puedes experimentar interrupciones ocasionales o retrasos en la entrega. No confíes en ModDNS para servicios críticos hasta el lanzamiento completo.",
-                "follow": "Para comenzar a probar modDNS, sigue el enlace de registro único a continuación:",
+                "follow": "Solicita un enlace de registro único a continuación para comenzar a probar ModDNS:",
                 "feedback": "Agradecemos tus comentarios sobre el servicio a través de",
                 "signed": "Te has registrado en ModDNS, un servicio de DNS privado y seguro desarrollado por IVPN.",
                 "access": "Accede al panel de control del servicio ModDNS",
                 "here": "aquí",
-                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:"
+                "submit": "Por favor, envía tus comentarios, solicitudes y cualquier problema que encuentres a través de uno de los siguientes canales:",
+                "generate": "Generar",
+                "signup": "Regístrate en la beta de ModDNS a través de este enlace:",
+                "expireNote": "Nota: Esta URL expira 15 minutos después de su generación."
             }
         },
         "greetings": "¡Tu cuenta ha sido creada!",
