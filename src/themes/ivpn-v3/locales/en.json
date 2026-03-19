@@ -140,7 +140,7 @@
                 "betaDescription2": "Use modDNS combined with IVPN, configure it system-wide on any operating system or directly within browsers.",
                 "betaDescription3": "ModDNS is currently in beta and available for registration to selected IVPN customers for free. The service will stay free for beta participants after launch as long as they have an active IVPN subscription.",
                 "betaDescription4": "After successful registration, modDNS specific identifiers are deleted from IVPN systems, ensuring your accounts are not linked together.",
-                "betaDescription5": "Beta Disclaimer: This service is in active development. You may encounter occasional downtime or delivery delays. Do not rely on ModDNS for mission-critical services until the full release.",
+                "betaDescription5": "Beta Disclaimer: This service is in active development. You may encounter occasional downtime. Do not rely on ModDNS for mission-critical services until the full release.",
                 "follow": "Request a unique registration link below to start testing modDNS:",
                 "feedback": "We welcome your feedback about the service via",
                 "signed": "You have signed up to ModDNS, a private, secure DNS service developed by IVPN.",

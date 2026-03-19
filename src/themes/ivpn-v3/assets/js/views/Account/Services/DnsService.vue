@@ -32,7 +32,7 @@
             <p>{{ $t('account.services.dns.betaDescription5') }}</p>
             <p>
                 {{ $t('account.services.dns.submit') }}<br>
-                GitHub - <a target="_blank" href="https://github.com/ivpn/dns">https://github.com/ivpn/dns</a><br>
+                GitHub - <a target="_blank" href="https://github.com/ivpn/moddns">https://github.com/ivpn/moddns</a><br>
                 Email - <a href="mailto:moddns@ivpn.net">moddns@ivpn.net</a>
             </p>
         </div>
