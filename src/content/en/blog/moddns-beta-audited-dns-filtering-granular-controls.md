@@ -90,7 +90,7 @@ After registration, modDNS-related identifiers are removed from IVPN systems to 
 
 ## Feedback
 
-Send your feedback about the service to [mailx@ivpn.net](mailto:mmoddns@ivpn.net), or open an issue on [GitHub][1]. We are particularly interested in blocklists tests, performance feedback, and feature requests that would improve your DNS filtering workflow.
+Send your feedback about the service to [moddns@ivpn.net](mailto:mmoddns@ivpn.net), or open an issue on [GitHub][1]. We are particularly interested in blocklists tests, performance feedback, and feature requests that would improve your DNS filtering workflow.
 
 Thank you for testing modDNS with us!
 
