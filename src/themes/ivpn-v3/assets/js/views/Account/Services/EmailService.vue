@@ -19,7 +19,7 @@
                 {{ $t('account.services.mail.follow') }}<br>
                 </p>
                 <p>
-                    {{ $t('account.services.mail.signup') }} <a target="_blank" :href="'https://app.mailx.net/signup/' + subId">https://app.mailx.net/signup/{{ subId }}</a><br>
+                    {{ $t('account.services.mail.signup') }} <a target="_blank" :href="'https://mailx.net/signup/' + subId">https://mailx.net/signup/{{ subId }}</a><br>
                     {{ $t('account.services.mail.expireNote') }}
                 </p>
             </p>
@@ -28,7 +28,7 @@
 
         <div v-if="subIdDeletedAt && loaded">
             <p>{{ $t('account.services.mail.signed') }}</p>
-            <p>{{ $t('account.services.mail.access') }} <a target="_blank" href="https://app.mailx.net">{{ $t('account.services.mail.here') }}</a>.</p>
+            <p>{{ $t('account.services.mail.access') }} <a target="_blank" href="https://mailx.net">{{ $t('account.services.mail.here') }}</a>.</p>
             <p>{{ $t('account.services.mail.betaDescription5') }}</p>
             <p>
                 {{ $t('account.services.mail.submit') }}<br>
