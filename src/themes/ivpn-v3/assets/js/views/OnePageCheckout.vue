@@ -158,6 +158,7 @@
                          <button type="button" :disabled="!isValidated()" class="btn btn-solid btn-light" @click="send()">
                               <div class="bitcoin-lightning-icon" ></div> Purchase access
                           </button>
+                          <p v-if="sendError" class="error">{{ sendError }}</p>
                           <h4>We host our own BTCPay Server to generate a Lightning invoice for payment.</h4>
                           <h4>By making a payment you are agreeing to our <a href="/en/tos">Terms of Service</a>.</h4>
                      </div>
@@ -171,15 +172,13 @@
 
 <script>
 import Api from "@/api/api";
-import { mapState, storeKey } from "vuex";
+import { mapState } from "vuex";
 import wireguard from '@/wireguard';
 import "vue-select/dist/vue-select.css";
 import "vue-multiselect/dist/vue-multiselect.css";
 import SelectLocations from "@/components/SelectLocations.vue";
 import SelectLocationsMulti from "@/components/SelectLocationsMulti.vue";
-import SuccessIcon from "@/components/icons/success.vue";
-import DownIcon from "@/components/icons/btn/Download.vue";
-import CountryFlag from 'vue-country-flag-next'
+
 
 const products = {
         prices: [
@@ -195,9 +194,6 @@ export default {
     components: {
       SelectLocations,
       SelectLocationsMulti,
-      SuccessIcon, 
-      DownIcon,
-      CountryFlag,
     },
     data() {
         return {
@@ -212,10 +208,11 @@ export default {
             selectedSats: products.prices[0].sats,
             selectedExitLocation:  [],
             selectedMultihopExitLocation:  [],
-            selectedEntryLocation: null,
+            selectedEntryLocation: [],
             multihop: false,
+            inProgress: false,
+            messageSent: false,
             validation: {
-                multihop: true,
                 submit: true,
             },
             servers: [],
@@ -223,6 +220,7 @@ export default {
             error: {
                 addKey: null,
             },
+            sendError: null,
             keysAdded: false,
             usedCustomKeysText: "You have added the following custom key pair:",
             generateKeysClicked: false,
@@ -233,8 +231,8 @@ export default {
         selectedEntryLocation: function(){
             if( this.selectedEntryLocation != null && this.selectedEntryLocation.length > 1){
                 this.selectedEntryLocation.shift();
-                let [entry] = this.selectedEntryLocation 
-                this.selectedEntryLocation = entry;
+                let [entry] = this.selectedEntryLocation;
+                this.selectedEntryLocation = [entry];
             }
 
             if(this.selectedEntryLocation != null && this.selectedEntryLocation.length > 0 && this.selectedMultihopExitLocation != null && this.selectedMultihopExitLocation.length > 0){
@@ -274,12 +272,6 @@ export default {
                     this.validation.submit = false;
                 }    
             }
-            this.wireguardConfigs = [];
-            this.selectedExitLocation.forEach((location) => {
-                this.wireguardConfigs.push(location);
-            });
-            console.log("Selected exit location: ", this.selectedExitLocation);
-            console.log("submitted: ", this.validation.submit);
         },
 
     },
@@ -304,13 +296,13 @@ export default {
     },
     methods: {
         isValidated(){
-            return !this.validation.submit && (this.keysAdded || this.generateKeysClicked);i
+            return !this.validation.submit && (this.keysAdded || this.generateKeysClicked);
         },
         async fetchBtcPrice(){
             try {
                 const res = await Api.getExchangeRates();
                 if (res.bitcoin) {
-                    products.prices.forEach((item, index) => {
+                    products.prices.forEach((item) => {
                         item.price = (res.bitcoin * (item.sats / 100000000)).toFixed(3);
                     });
                     this.selectedPrice = products.prices[0].price;
@@ -333,33 +325,43 @@ export default {
         async send() {
             if (this.inProgress) return;
 
+            this.sendError = null;
             this.validation.submit = true;
-            const config = {
-                    exit: this.selectedExitLocation,
-                    entry: this.selectedEntryLocation,
-                    publicKey: this.publicKey,
-            }
             try {
                 await this.$store.dispatch('auth/logout')
-                await this.$store.dispatch("auth/createAccount", {product: "IVPN Light"} );
-                
-                const URL = await this.$store.dispatch("account/createLightInvoice", {
+                try {
+                    await this.$store.dispatch("auth/createAccount", {product: "IVPN Light"});
+                } catch (createError) {
+                    this.sendError = createError.message || "Failed to create account. Please try again.";
+                    this.validation.submit = false;
+                    return;
+                }
+                try{
+                    const URL = await this.$store.dispatch("account/createLightInvoice", {
                     exitServer: this.selectedExitLocation,
                     entryServer: this.selectedEntryLocation,
                     publicKey: this.publicKey,
                     priceID: this.selectedBillingCycle, 
-                });
-                if( URL ){
-                    window.location = URL;
+                    });
+                    if( URL ){
+                        window.location = URL;
+                        this.validation.submit = true;
+                    }else{
+                        this.sendError = "Failed to create invoice. Please try again.";
+                        this.validation.submit = false;
+                    }
+                    
+                } catch(error) {
+                    this.sendError = error.message || "Failed to create invoice. Please try again.";
+                    this.validation.submit = false;
                 }
-                this.validation.submit = true;
+
 
             } catch (error) {
-                console.error("Failed to send data:", error);
-                this.validation.submit = true;
+                this.sendError = error.message || "Failed to create account. Please try again.";    
+                this.validation.submit = false;
             }
 
-            this.messageSent = true;
         },
         generateKeys() {
             const keypair = wireguard.generateKeypair();
