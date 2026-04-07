@@ -13,35 +13,35 @@ The current message is here:
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-As of 2026-03-03 no warrants have ever been served to IVPN or IVPN employees. No searches or seizures of any kind have ever been performed on IVPN assets. IVPN has no direct or indirect knowledge of any backdoors, or potential backdoors in our servers or network and IVPN has not received any requests to implement a backdoor. IVPN has never disclosed any user communications to any third party.
+As of 2026-04-07 no warrants have ever been served to IVPN or IVPN employees. No searches or seizures of any kind have ever been performed on IVPN assets. IVPN has no direct or indirect knowledge of any backdoors, or potential backdoors in our servers or network and IVPN has not received any requests to implement a backdoor. IVPN has never disclosed any user communications to any third party.
 
 Source: mempool.space (https://mempool.space/blocks)
 
-height: 939111
-hash: 00000000000000000000043dbe58e074d6bce5e07b6d24ec2803091fb01923a0
+height: 944024
+hash: 00000000000000000001c505bdf409013e53b6754bdb0caa0ad69c919bbfc894
 
 
 Source: FT (https://www.ft.com/news-feed)
 
-Middle Eastern airlines start to fly stranded passengers out of Gulf
-France and Italy are preparing to evacuate citizens but many have yet to launch flights due to closed airspace
+Bill Ackman’s Pershing Square offers €55bn for Universal Music Group
+Proposed deal would combine world’s largest music group with a blank-cheque company
 
-Stocks and bonds sell off as widening Middle East war rattles markets
-European indices and US futures down as conflict escalates across region
+Taiwan opposition leader in ‘peace’ trip to China
+First trip by a Kuomintang chair in a decade comes shortly ahead of planned Beijing summit with Donald Trump
 
-GB News takes fresh funding from investors despite narrowing losses
-Revenues for right-leaning broadcaster rise following bigger TV and online audiences
+Vietnam gets its most powerful leader in decades
+Communist Party leader To Lam’s election as president cements his grip on one of the world’s fastest-growing economies
 
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCgAdFiEEXxDK46RlUWr/x/EkisFrnrZHumkFAmmmpPYACgkQisFrnrZH
-umlOdgf6A9b6La3xhPadd0xBbImY7fk+gxQ08yl46d3VMDt4iO8KgYREXLljfygF
-hDL1C/CPyDgH1VhITJCjFMGjWmv3Hs2RagRcj+x9qHcabSQOUputMoOht/UM1aIk
-oi9iEs5IhQFSuOtWX2ZlNHYkLW3VPtQQhsWjhoayUcvK2yV0yKd/SCT4mXKYdPp0
-DMiKp0GvI8rzcre24IAOazFpPjN+mGCT9m48KiTKIqH5ruEPe3QOVhdXrKOS2xa0
-r7kwuXQe4YpMvoJEMxuCXTZM/qLwu8t2S2oU5HBjyK7Gw1nY11B/7rJZ4ICx86QK
-YkbRNoHzWLThogfJ4IukgasqG6TjnA==
-=Q9uU
+iQEzBAEBCgAdFiEEXxDK46RlUWr/x/EkisFrnrZHumkFAmnUwe0ACgkQisFrnrZH
+umm1GQgAq5fxMJOG+sWm/GNJvZ8MdsodPqOrdadz1MwwL34YVnLVryJtQC+CDyNm
+Uzbb+5Y2hJ03tCyBrOfm9jRf0TG3H3PuVHhSHYxe3s6b70DSBljwW6C8Rb/I+xpO
+/EjACu7cCZE0JLI+q5jpTWwJArcI/kO6taj4+eMY+sTw7uwcKrqLSVCTnz6H6okp
+V40v+mn3P2nZYJbySEiy4/fI8bf3vDVL0GiC3fUh/hhWWgDQWQS00eFLOKXVINpg
+BDntA4hFQgc3h/f7IshZUCdCoikWzuGj0tk6HytC7diqxNJOusPWSBcKdMJ1vDTC
+0Yq24nurkdkjFkPH5waXgI9NFa/r/A==
+=K+Hl
 -----END PGP SIGNATURE-----
 
 
